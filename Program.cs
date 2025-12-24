@@ -240,7 +240,7 @@ namespace CofreSenhas
                 }
             }
         }
-
+        //Função que deleta senhas no banco por ID
         public void Deletar_Servico(Cofre cofre)
         {
             using(var DBConnection = new SqliteConnection(_connectionString))
