@@ -144,7 +144,7 @@ namespace CofreSenhas
             }
         }
         
-        //função utilizada para criar a tabela no banco caso ela não tenha sido criada (A ser aprimorado, Possível redundância).
+        //função utilizada para criar a tabela no banco caso ela não tenha sido criada (A ser aprimorado, Possível redundância). 
         public void Criar_Tabela_Banco()
         {
             using(var DBConnection = new SqliteConnection(_connectionString))
@@ -166,7 +166,7 @@ namespace CofreSenhas
         }
 
 
-        //função lê as senhas dentro do Banco, caso ela não tenha sido criada.
+        //função lê as senhas dentro do Banco por um parametro nome.
         public void Ler_Senhas_Banco(Cofre cofre)
         {
             using(var DBConnection = new SqliteConnection(_connectionString))
